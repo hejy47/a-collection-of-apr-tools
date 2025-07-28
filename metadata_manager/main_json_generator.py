@@ -71,13 +71,19 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):  # 这里也要记得改
     def on_clicked_2(self):
         print("Parsing the entered bibtex now")
         bibtex = self.textEdit.toPlainText()
-        self.title, self.authors, self.year = bibtex_parser.parse_bibtex(bibtex)
+        try:
+            self.title, self.authors, self.year = bibtex_parser.parse_bibtex(bibtex)
+        except KeyError:
+            assert "\\n" in bibtex, "Invalid bibtex format. Please check the format and try again."
+            bibtex = bibtex.replace("\\n", "\n")
+            self.title, self.authors, self.year = bibtex_parser.parse_bibtex(bibtex)
         self.lineEdit_title.setText(f"{self.title}")
         self.lineEdit_year.setText(f"{self.year}")
         self.lineEdit_authors.setText(f"{', '.join(self.authors)}")
 
+        file_name = f"{self.year}-{get_formatted_title(self.title)}.json"
         files = glob.glob(
-            f"{config.OUTPUT_DIR}/**/{self.year}-{get_formatted_title(self.title)}.json",
+            f"{config.OUTPUT_DIR}/**/{file_name}",
             recursive=True,
         )
         if len(files) > 0:
@@ -169,8 +175,12 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):  # 这里也要记得改
 def get_formatted_title(title):
     """
     format the title to a valid file name
+
+    As we use title as our file name, we need to format it (especially remove characters that are not supported in windows platform)
+
+    invalid characters: \/:*?"<>|
     """
-    return title.replace(":", "-").replace("?", "").replace(",", "").replace("/", "-")
+    return title.replace("\\", "").replace("/", "-").replace(":", "-").replace("*", "").replace("?", "").replace(",", "").replace("<", "").replace(">", "")
 
 
 if __name__ == "__main__":

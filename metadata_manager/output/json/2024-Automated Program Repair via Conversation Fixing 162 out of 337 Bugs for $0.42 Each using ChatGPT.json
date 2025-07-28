@@ -1,5 +1,5 @@
 {
-    "Title": "Automated Program Repair via Conversation: Fixing 162 out of 337 Bugs for \\$0.42 Each using ChatGPT",
+    "Title": "Automated program repair via conversation: Fixing 162 out of 337 bugs for $0.42 each using chatgpt",
     "APR Tool Name": "ChatRepair",
     "Authors": [
         "Chunqiu Steven Xia",
@@ -18,7 +18,7 @@
     ],
     "CCF Rank": "A",
     "Paper Category": "Tool Design",
-    "Bibtex": "@inproceedings{xia2024automated,\n  title={Automated Program Repair via Conversation: Fixing 162 out of 337 Bugs for \\$0.42 Each using ChatGPT},\n  author={Xia, Chunqiu Steven and Zhang, Lingming},\n  booktitle={Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis},\n  pages={819--831},\n  year={2024}\n}",
+    "Bibtex": "@inproceedings{xia2024automated,\n  title={Automated program repair via conversation: Fixing 162 out of 337 bugs for $0.42 each using chatgpt},\n  author={Xia, Chunqiu Steven and Zhang, Lingming},\n  booktitle={Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis},\n  pages={819--831},\n  year={2024}\n}",
     "Specification": "test",
     "Tool Category": "llm-based",
     "Bug Types": "general bugs"
