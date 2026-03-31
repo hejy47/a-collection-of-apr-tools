@@ -21,7 +21,7 @@
   ],
   "CCF Rank": "other",
   "Paper Category": "Tool Design",
-  "Bibtex": "@article{haque2025towards,\n  title={Towards Effectively Leveraging Execution Traces for Program Repair with Code LLMs},\n  author={Haque, Mirazul and Babkin, Petr and Farmahinifarahani, Farima and Veloso, Manuela},\n  journal={arXiv preprint arXiv:2505.04441},\n  year={2025}\n}",
+  "Bibtex": "@inproceedings{Haque_2025, title={Towards Effectively Leveraging Execution Traces for Program Repair with Code LLMs}, url={http://dx.doi.org/10.18653/v1/2025.knowledgenlp-1.17}, DOI={10.18653/v1/2025.knowledgenlp-1.17}, booktitle={Proceedings of the 4th International Workshop on Knowledge-Augmented Methods for Natural Language Processing}, publisher={Association for Computational Linguistics}, author={Haque, Mirazul and Babkin, Petr and Farmahinifarahani, Farima and Veloso, Manuela}, year={2025}, pages={160–179} }",
   "Specification": "",
   "Tool Category": "",
   "Bug Types": ""
