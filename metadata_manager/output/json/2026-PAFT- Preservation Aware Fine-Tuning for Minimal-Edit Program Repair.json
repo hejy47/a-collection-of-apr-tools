@@ -1,0 +1,20 @@
+{
+  "Title": "PAFT: Preservation Aware Fine-Tuning for Minimal-Edit Program Repair",
+  "Year": 2026,
+  "Venue": "arXiv",
+  "Link": "http://arxiv.org/abs/2604.03113v2",
+  "APR Tool Name": "",
+  "Target Language": [],
+  "Used Dataset": [],
+  "CCF Rank": "Other",
+  "Abstract": "Large language models (LLMs) are effective for automated program repair, but plausible patches that pass the full test suite often rewrite more code than necessary, increasing review and maintenance costs. This over-editing is common because most bugs are localized, while standard supervised fine-tuning provides no explicit signal about which tokens should be preserved and which should be changed. We propose PAFT, a preservation-aware fine-tuning method for minimal-edit program repair. PAFT deri",
+  "DOI": null,
+  "Authors": [
+    "Boyang Yang",
+    "Zijian Cai",
+    "Shunfu Jin",
+    "Haoye Tian"
+  ],
+  "Source": "arXiv",
+  "Added Date": "2026-04-14"
+}

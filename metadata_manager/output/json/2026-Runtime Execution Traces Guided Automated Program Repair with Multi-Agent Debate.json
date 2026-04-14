@@ -1,0 +1,21 @@
+{
+  "Title": "Runtime Execution Traces Guided Automated Program Repair with Multi-Agent Debate",
+  "Year": 2026,
+  "Venue": "arXiv",
+  "Link": "http://arxiv.org/abs/2604.02647v1",
+  "APR Tool Name": "",
+  "Target Language": [],
+  "Used Dataset": [],
+  "CCF Rank": "Other",
+  "Abstract": "Automated Program Repair (APR) struggles with complex logic errors and silent failures. Current LLM-based APR methods are mostly static, relying on source code and basic test outputs, which fail to accurately capture complex runtime behaviors and dynamic data dependencies. While incorporating runtime evidence like execution traces exposes concrete state transitions, a single LLM interpreting this in isolation often overfits to specific hypotheses, producing patches that satisfy tests by coincide",
+  "DOI": null,
+  "Authors": [
+    "Jiaqing Wu",
+    "Tong Wu",
+    "Manqing Zhang",
+    "Yunwei Dong",
+    "Bo Shen"
+  ],
+  "Source": "arXiv",
+  "Added Date": "2026-04-14"
+}

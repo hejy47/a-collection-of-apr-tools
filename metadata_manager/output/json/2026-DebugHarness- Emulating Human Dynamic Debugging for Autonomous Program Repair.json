@@ -1,0 +1,21 @@
+{
+  "Title": "DebugHarness: Emulating Human Dynamic Debugging for Autonomous Program Repair",
+  "Year": 2026,
+  "Venue": "arXiv",
+  "Link": "http://arxiv.org/abs/2604.03610v1",
+  "APR Tool Name": "",
+  "Target Language": [],
+  "Used Dataset": [],
+  "CCF Rank": "Other",
+  "Abstract": "Patching severe security flaws in complex software remains a major challenge. While automated tools like fuzzers efficiently discover bugs, fixing deep-rooted low-level faults (e.g., use-after-free and memory corruption) still requires labor-intensive manual analysis by experts. Emerging Large Language Model (LLM) agents attempt to automate this pipeline, but they typically treat bug fixing as a purely static code-generation task. Relying solely on static artifacts, these methods miss the dynami",
+  "DOI": null,
+  "Authors": [
+    "Maolin Sun",
+    "Yibiao Yang",
+    "Xuanlin Liu",
+    "Yuming Zhou",
+    "Baowen Xu"
+  ],
+  "Source": "arXiv",
+  "Added Date": "2026-04-14"
+}
